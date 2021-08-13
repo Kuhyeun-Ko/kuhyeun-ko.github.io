@@ -1,0 +1,221 @@
+@import "vars";
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+/*
+ * Basic
+ */
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    font-family: Helvetica;
+    // font-family: "Inconsolata";
+
+    height: 100%;
+}
+a {
+    text-decoration: none;
+    color: $accent;
+}
+a:hover {
+    text-decoration: underline;
+}
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/*
+ * Navbar
+ */
+
+#author-name {
+    font-size: 2rem;
+    // font-size: 30px;
+    color: #272727;
+    display: inline-block;
+}
+.navbar {
+    padding: 50px 0 50px 0;
+}
+.navbar-ul {
+    display: inline-block;
+    margin: 0;
+    padding: 5px 0 5px 0;
+    margin-left: 20px;
+}
+.nav-list {
+    list-style-type: none;
+    margin: 0 5px 0 10px;
+}
+.alignable {
+    display: inline-block;
+}
+.pull-left {
+    @extend .alignable;
+    float: left;
+}
+.pull-right {
+    @extend .alignable;
+    float: right;
+}
+
+/* Divs */
+
+.container {
+    max-width: $max-width;
+    margin: auto;
+}
+.wrapper {
+    min-height: 100%;
+}
+
+/* Institute Image */
+
+#ins-logo {
+	margin: auto;
+	display: block;
+	max-height: 100px;
+	text-align: center;
+}
+
+/* Mobile */
+
+@media (max-width: 800px) {
+    .container {
+        max-width: $med-width;
+        transition: 0.3s ease all;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        max-width: 83%;
+    }
+    .navbar-ul {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 500px) {
+	.navbar {
+		text-align: center;
+		padding: 50px 0px 0px 0px;
+	}
+	#author-name {
+		width: 100%;
+		float: none;
+	}
+	#navlist {
+		padding: 10px 0 10px 0;
+		margin: 0;
+		display: block;
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	#navlist li.alignable {
+		display: inline-block;
+	}
+	#navlist li.pull-left {
+		float: none;
+	}
+	#navlist li.nav-list {
+		margin: 0;
+	}
+}
+
+/* KHKO */
+.prof-description {
+    // margin-bottom: 0;
+    margin: 0;
+    font-size: 0.8rem;
+    color: #505050;
+}
+.ul-papers {
+    list-style:none;
+    padding-left:0px;
+  }
+  
+  .li1 {
+      margin-top: 1em;
+      margin-bottom: 1em;
+      padding: 0 0 0 13em;
+      list-style: none;
+      background-image: url("/khko/images/2021_bmvc2.png");
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: 12em 12em;
+  }
+ 
+  .li2 {
+    //   margin-top: 1em;
+      margin-bottom: 1em;
+      padding: 0 0 0 13em;
+      list-style: none;
+      background-image: url("/khko/images/2021_iccv2.png");
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: 12em 12em;
+  }
+  
+  .li-std{
+    margin-top: 2.5em;
+      margin-bottom: 2.5em;
+  }
+  
+  p {
+    margin: 0px;
+  }
+  
+  .description {
+    margin-top: 0;
+    // font-family: sans-serif;
+    font-size: 1em;
+    /* text-align: center; */
+  }
+  .title {
+    margin-top: 0;
+    // font-family: sans-serif;
+    /* font-size: 1em; */
+    font-weight: bold;
+    /* text-align: center; */
+  }
+  .authors {
+    margin-top: 0;
+    // font-family: sans-serif;
+    /* font-size: 1em; */
+    /* text-align: center; */
+  }
+  .venue {
+    margin-top: 0;
+    // font-family: sans-serif;
+    /* font-size: 1em; */
+    font-weight: bold;
+    /* text-align: center; */
+  }
+  .resources {
+    margin-top: 0;
+    // font-family: sans-serif;
+    /* font-size: 1em; */
+    /* text-align: center; */
+  }
+
+.bg-white{
+    margin-bottom: 1em;
+    padding-left: 10em;
+    background-color: white;
+}
+.bg-gray{
+    margin-bottom: 1em;
+    padding-left: 10em;
+    background-color: #f2f3f4;
+}
+@import "typography";
+@import "tables";

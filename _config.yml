@@ -1,0 +1,25 @@
+title: Kuhyeun Ko
+url: "https://khko1022.github.io"
+baseurl: ""
+
+markdown: kramdown
+# ins_logo: "./bits-logo.png"
+
+tracking_id: #
+
+# footer: yes
+footer: no
+footer_url: "https://github.com/ankitsultana"
+footer_text: "Page design by Ankit Sultana"
+
+sass:
+    style: compressed
+    sass_dir: _sass
+
+nav:
+ - name: "CV"
+   link: "/khko/cv.pdf"
+ - name: "Github"
+   link: "https://github.com/khko1022"
+ - name: "Contact"
+   link: "mailto:khko@unist.ac.kr"
