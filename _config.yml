@@ -1,5 +1,5 @@
 title: Kuhyeun Ko
-url: "https://khko1022.github.io"
+url: "https://kuhyeun-ko.github.io"
 baseurl: ""
 
 markdown: kramdown
@@ -20,6 +20,6 @@ nav:
  - name: "CV"
    link: "/khko/cv.pdf"
  - name: "Github"
-   link: "https://github.com/khko1022"
+   link: "https://github.com/kuhyeun-ko"
  - name: "Contact"
    link: "mailto:khko@unist.ac.kr"
