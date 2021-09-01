@@ -3,8 +3,19 @@
 <head>
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+    <!-- <style>
+        html {
+          height: -webkit-fill-available;
+        }
+        body{
+            height: 100vh; /* '-webkit-fill-available'이 유효하지 않을 경우를 대비 */
+            height: -webkit-fill-available;
+        }
+    </style> -->
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="blog, accent, {{ site.author }}, {{ site.title }}, jekyll">
     <meta name="author" content="{{ site.author }}">
     {% if page.url == "/404.html" %}
@@ -53,13 +64,14 @@
         <meta name="twitter:image" content="{{ site.profile_picture }}">
     {% endif %}
 </head>
-<body>
+<body >
     <div class="wrapper">
         <div class="navbar container">
             {% if site.ins_logo %}
                 <img id="ins-logo" src="{{ site.ins_logo }}" />
             {% endif %}
-            <span class="alignable pull-left" style="padding-left: 5em; font-size: 2em;">Kuhyuen Ko</span>
+            <span class="hp-title">Kuhyuen Ko</span>
+
             <!-- <a id="author-name" class="alignable pull-left" href="{{ site.url }}{{ site.baseurl }}">{{ site.title }}</a> -->
             <!-- <ul id="navlist" class="alignable pull-right navbar-ul">
                 {% for x in site.nav %}
