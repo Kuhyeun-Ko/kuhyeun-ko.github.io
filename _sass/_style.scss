@@ -179,7 +179,14 @@ hr {
 .fab-list{
     list-style: none; 
     font-size: 30px; 
+    // text-align: center;
     margin-left: 1.5rem;
+}
+.fab-txt{
+    list-style: none; 
+    font-size: 10px; 
+    font-weight: bold;
+    margin-left: 2.0rem;
 }
 .ul-papers {
     list-style:none;
